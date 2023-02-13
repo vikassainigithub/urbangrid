@@ -1,0 +1,745 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    // border: 1px solid blue;
+}
+html{
+   font-size:15px;
+}
+// jquery-variables
+$monoton: 'Monoton', cursive;
+$notoserif:'Noto Serif Bengali', serif;
+$blue:rgb(16, 152, 244);
+$coral:coral;
+$black:rgb(16, 17, 17);
+$white:rgb(245, 252, 255);
+// header starts
+// code written in nesting form under jquery
+header{
+    width:100%;
+    height:100vh;
+    padding:1rem 0rem;
+    background-image: url(../urban/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    nav{
+        width:80%;
+        margin:0 auto;
+        display: grid;
+        color:$white;
+        grid-template-rows: repeat(1,auto);
+        grid-template-columns: repeat(2,auto);
+        // justify-content: space-between;
+        .navheading{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start:1;
+            grid-column-end:2;
+            justify-self: start;
+            h1{
+                font-size: 1rem;
+                span{
+                    color:$blue;
+                }
+            }
+            ul{
+                display: none;
+                a{
+                text-decoration: none;
+                color:$white;
+                li{
+                    width:5rem;
+                   list-style-type: none;
+                   padding:0.6rem 0rem;
+                   font-size:1.2rem; 
+                   transition: 1s; 
+                }
+                li:hover{
+                    margin-left: 0.5rem;
+                    padding-left: 0.5rem;
+                    background-image: linear-gradient(to right,$blue,rgb(0, 255, 166),$blue);
+                }
+                } 
+                li{
+                list-style-type: none;
+                font-size:1.2rem;
+                padding:0.6rem 0rem; 
+                transition:1s;
+                }
+                li:hover{
+                    margin-left: 0.5rem;
+                    padding-left: 0.5rem;
+                    background-image: linear-gradient(to right,$blue,rgb(0, 255, 166),$blue);
+                }
+            }
+        }
+        .icons{
+            grid-row-start:1;
+            grid-row-end:2;
+            grid-column-start:2;
+            grid-column-end:3;
+            justify-self:end;
+            a{
+            color:red;
+        }
+     }
+    }
+   .center{
+    width:80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:10rem;
+    h1{
+        color:$white;
+        font-family: $notoserif;
+        margin-top: 8rem;
+        margin-bottom:0.6rem;
+        font-size: 5rem;
+        font-weight: 300;
+    }
+    p{
+        font-family: $notoserif;
+        margin-bottom: 1.6rem;
+        font-size: 1rem;
+        word-spacing: 0.1rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.6rem;
+        color:$white;
+    }
+    .mybtn{
+        background-color: $blue;
+        font-size: 1rem;
+        font-family: $notoserif;
+        padding:0.6rem 1rem;
+        font-weight: 600;
+        color:white;
+        border:none;
+        border-radius: 0.2rem;
+        transition: 1s;
+    }
+    .mybtn:hover{
+        transform:rotateX(360deg);
+        background-image: linear-gradient(to right,$blue,rgb(0, 255, 166),$blue);
+      }
+  }
+   
+}
+
+// section(grouptwo starts) starts
+.grouptwo{
+    width:80%;
+    margin:0 auto;
+    background-image: url(../urban/circle-scatter-haikei.png);
+       background-size:cover;
+       background-repeat: no-repeat;
+       background-position: center;
+
+    display:grid;
+    grid-template-rows: repeat(1,auto);
+    grid-template-columns: repeat(2,auto);
+     padding:5rem 0rem;
+    .imagegroup{
+        padding:0.5rem;
+        border-radius: 100%;
+        img{
+            width:100%;
+            border-radius: 100%;
+            border:none;
+            height: 100%;
+        }
+    }
+    .text{
+        padding:1rem 0rem 0rem 2rem;
+        h1{
+            font-size:1.6rem;
+            margin-bottom: 1.6rem;
+        }
+        p{
+            margin:3rem 0rem;
+            color:grey;
+        }
+        p2{
+            word-spacing: 0.1rem;
+            color:grey;
+        }
+        .mybtn{
+            background-color: $blue;
+            font-size: 1rem;
+            font-family: $notoserif;
+            padding:0.6rem 1rem;
+            font-weight: 600;
+            color:white;
+            border:none;
+            border-radius: 0.2rem;
+            transition: 1s;
+        }
+        .mybtn:hover{
+            transform:rotateX(360deg);
+            background-image: linear-gradient(to right,$blue,rgb(0, 255, 166),$blue);
+          }
+        }
+}
+// fullwidth starts
+.fullwidth{
+    width:100%;
+    background-color: $blue;
+    .halfwidth{
+        width:80%;
+        margin:0 auto;
+        background-color: $blue;
+        color:$white;
+    
+        display:grid;
+        grid-template-rows: repeat(1,auto);
+        grid-template-columns: repeat(2,auto);
+        
+        padding:5rem 0rem;
+        .imagegroup{
+            padding:0.5rem;
+            border-radius: 100%;
+            img{
+                width:100%;
+                border-radius: 100%;
+                border:none;
+                height: 100%;
+            }
+        }
+        .paragraph{
+            padding:1rem 0rem 0rem 2rem;
+            h1{
+                font-size:1.6rem;
+                margin-bottom: 1.6rem;
+            }
+            p{
+                margin:3rem 0rem;
+                color:rgb(201, 199, 199);
+            }
+            p2{
+                word-spacing: 0.1rem;
+                color:rgb(201, 199, 199);
+            }
+            .mybtn{
+                background-color: $white;
+                font-size: 1rem;
+                font-family: $notoserif;
+                padding:0.6rem 1rem;
+                font-weight: 600;
+                color:$blue;
+                border:none;
+                border-radius: 0.2rem;
+                transition: 1s;
+            }
+            .mybtn:hover{
+                transform:rotateX(360deg);
+                background-image: linear-gradient(to right,$blue,rgb(0, 255, 166),$blue);
+              }
+            }
+    }
+}
+// threesection image section starts
+.secthree{
+    width:100%;
+    text-align: center;
+    padding:5rem 0rem;
+    h1{
+        font-size:2rem;
+        font-family:$notoserif;
+    }
+    h4{
+        margin:1rem 0rem 2rem 0rem;
+        color: $blue;
+        font-size: 1.5rem;
+    }
+    .imgsection{
+    width:80%;
+    margin: 0 auto;;
+    display: grid;
+    grid-template-rows: repeat(1,auto);
+    grid-template-columns:repeat(3,auto);
+   justify-content: space-between;
+ //    imgone starts
+    .imageone{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    .bxone{
+        height:70%;
+        border-radius:100%;
+        padding:0.3rem;
+        border:1px solid $blue;
+    img{
+        width:100%;
+        height:100%;
+        border-radius: 100%;
+        border:none;
+        transition:0.5s;
+      }
+      img:hover{
+        transform: scale(1.03);
+      }
+    }
+    p{
+        margin:1rem 0rem;
+        line-height: 1.5rem;
+        color:$blue;
+    }
+    .mybtn{
+        background-color: $blue;
+        font-size: 1rem;
+        font-family: $notoserif;
+        padding:0.6rem 1rem;
+        font-weight: 600;
+        color:white;
+        border:none;
+        border-radius: 0.2rem;
+        transition: 1s;
+    }
+    .mybtn:hover{
+        transform:rotateX(360deg);
+        background-image: linear-gradient(to right,$blue,rgb(0, 255, 166),$blue);
+      }
+    }
+ //    imgtwo starts
+   .imagetwo{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    .bxtwo{
+        height:70%;
+        border-radius:100%;
+        padding:0.3rem;
+        border:1px solid $blue;
+    img{
+        width:100%;
+        height:100%;
+        border-radius: 100%;
+        border:none;
+        transition:0.5s;
+      }
+      img:hover{
+        transform: scale(1.03);
+      }
+    }
+    p{
+        margin:1rem 0rem;
+        line-height: 1.5rem;
+        color:$blue;
+    }
+    .mybtn{
+        background-color: $blue;
+        font-size: 1rem;
+        font-family: $notoserif;
+        padding:0.6rem 1rem;
+        font-weight: 600;
+        color:white;
+        border:none;
+        border-radius: 0.2rem;
+        transition: 1s;
+    }
+    .mybtn:hover{
+        transform:rotateX(360deg);
+        background-image: linear-gradient(to right,$blue,rgb(0, 255, 166),$blue);
+      }
+    }
+ //    imgthree starts
+   .imagethree{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    .bxthree{
+        height:70%;
+        border-radius:100%;
+        padding:0.3rem;
+        border:1px solid $blue;
+        img{
+            width:100%;
+           height:100%;
+           border-radius: 100%;
+           border:none;
+           transition:0.5s;
+         }
+         img:hover{
+            transform: scale(1.03);
+          }
+        }
+    p{
+        margin:1rem 0rem;
+        line-height: 1.5rem;
+        color:$blue;
+    }
+    .mybtn{
+        background-color: $blue;
+        font-size: 1rem;
+        font-family: $notoserif;
+        padding:0.6rem 1rem;
+        font-weight: 600;
+        color:white;
+        border:none;
+        border-radius: 0.2rem;
+        transition: 1s;
+    }
+    .mybtn:hover{
+        transform:rotateX(360deg);
+        background-image: linear-gradient(to right,$blue,rgb(0, 255, 166),$blue);
+      }
+    }
+ }
+}
+// footer parts starts
+footer{
+    text-align:center;
+    padding:2rem 0rem;
+    font-size: 2.2rem;
+    text-align: center;
+    a{
+        color:black;
+    }
+    span{
+    margin-left:2rem;
+    border:none;
+    transition:1s;
+   }
+   span:hover{
+    color:red;
+    transform:rotate(360deg);
+   }
+   .fa-facebook{
+    transition: 1s;
+   }
+   .fa-facebook:hover{
+    transform:rotateY(360deg);
+    color:red;
+   }
+   .fa-twitter{
+    transition: 1s;
+   }
+   .fa-twitter:hover{
+    transform:rotateY(360deg);
+    color:red;
+   }
+   p{
+    margin-top: 1rem;
+    font-size:1rem;
+    font-family: $notoserif;
+    i{
+        color:red;
+    }
+   }
+}
+// map starts
+.map{ 
+    h3{
+        font-size:1rem;
+        a{
+            span{
+                color: red;
+            }
+        }
+    }
+    width:50vw;
+    height:60vh;
+    margin:0 auto;
+    // background-color: aquamarine;
+}
+// media-query starts header
+@media only screen and(max-width:1100px){
+header{
+    .center{
+     h1{
+         font-size: 3rem;
+     }
+     p{
+         font-family: $notoserif;
+         margin-bottom: 1.6rem;
+         font-size:0.8rem;
+         line-height: 1.6rem;
+         color:$white;
+     }
+   }
+ }
+}
+// section(grouptwo starts) starts
+@media only screen and(max-width:1280px){
+    .grouptwo{
+        width:80%;
+         padding:8rem 0rem;
+        .imagegroup{
+               height:80%;
+            img{
+                width:100%;
+                border-radius: 100%;
+                border:none;
+                height: 100%;
+            }
+        }
+    }
+}
+@media only screen and(max-width:1080px){
+    .grouptwo{
+        width:35%;
+        margin: 0 auto;
+        background-image: url(../urban/circle-scatter-haikei.png);
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:top;
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        grid-template-columns: repeat(1,auto);
+        align-content: space-between;
+        justify-content: center;
+        padding:8rem 0rem;
+        .imagegroup{
+            width:100%;
+            height:100%;
+            grid-row: 1/2;
+            grid-column: 1/2;
+         img{
+             width:100%;
+             height:100%;
+             border-radius: 100%;
+             border:none;
+         }
+         .text{
+            grid-row: 2/3;
+            grid-column: 1/2;
+            padding:0.4rem 0rem 1rem 0.2rem ;
+        }
+    }
+}
+}
+// grouptwo starts media query
+@media only screen and(max-width:680px){
+    .grouptwo{
+        width:60%;
+        margin: 0 auto;
+        background-image: url(../urban/circle-scatter-haikei.png);
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:top;
+        display: grid;
+        grid-template-rows: repeat(2,auto);
+        grid-template-columns: repeat(1,auto);
+        align-content: space-between;
+        justify-content: center;
+        padding:8rem 0rem;
+        .imagegroup{
+            width:100%;
+            height:100%;
+            grid-row: 1/2;
+            grid-column: 1/2;
+         img{
+             width:100%;
+             height:100%;
+             border-radius: 100%;
+             border:none;
+         }
+        }
+         .text{
+            grid-row: 2/3;
+            grid-column: 1/2;
+            padding:0.4rem 0rem 1rem 0rem ;
+            h1{
+                font-size:1.6rem;
+            }
+        }
+    }
+}
+// media query starts from fullwidth parts.
+@media only screen and(max-width:1280px){
+    .fullwidth{
+        .halfwidth{
+            width:80%;
+            padding:8rem 0rem;
+            .imagegroup{
+                height:80%;
+             img{
+                 width:100%;
+                 border-radius: 100%;
+                 border:none;
+                 height: 100%;
+             }
+        }
+        .paragraph{
+            height:100%;
+            padding:1rem 0rem 1rem 0.7rem ;
+         }
+    }
+ }
+}
+@media only screen and(max-width:1080px){
+    .fullwidth{
+        .halfwidth{
+            width:35%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: repeat(2,auto);
+            grid-template-columns: repeat(1,auto);
+            align-content: space-between;
+            justify-content: center;
+            padding:8rem 0rem;
+            .imagegroup{
+                width:100%;
+                height:100%;
+                grid-row: 1/2;
+                grid-column: 1/2;
+             img{
+                 width:100%;
+                 height:100%;
+                 border-radius: 100%;
+                 border:none;
+             }
+        }
+        .paragraph{
+            grid-row: 2/3;
+            grid-column: 1/2;
+            padding:0.4rem 0rem 1rem 0.2rem ;
+        }
+    }
+ }
+}
+@media only screen and(max-width:680px){
+    .fullwidth{
+        .halfwidth{
+            width:60%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-rows: repeat(2,auto);
+            grid-template-columns: repeat(1,auto);
+            align-content: space-between;
+            justify-content: center;
+            padding:8rem 0rem;
+            .imagegroup{
+                width:100%;
+                height:100%;
+                grid-row: 1/2;
+                grid-column: 1/2;
+             img{
+                 width:100%;
+                 height:100%;
+                 border-radius: 100%;
+                 border:none;
+             }
+             }
+             .paragraph{
+                grid-row: 2/3;
+                grid-column: 1/2;
+                padding: 1rem 0rem 0rem 0rem;
+                h1{
+                    font-size: 1.6rem;
+                }
+            } 
+         }
+ }
+}
+// media query starts from secthree.
+@media only screen and(max-width:1280px){
+    .secthree{
+        width:100%;
+        text-align: center;
+        .imgsection{
+         width:80%;
+        .imageone{
+            padding:0.3rem;
+            p{
+                font-size:0.9rem;
+            }
+        .bxone{
+            height:60%;
+        }
+     }
+     //    imgtwo starts
+       .imagetwo{
+        padding:0.3rem;
+        p{
+            font-size:0.9rem;
+        }
+        .bxtwo{
+            height:60%;
+        }
+        }
+     //    imgthree starts
+       .imagethree{
+        padding:0.3rem;
+        p{
+            font-size:0.9rem;
+        }
+        .bxthree{
+            height:60%;
+            }
+        }
+     }
+    }
+}
+@media only screen and(max-width:1070px){
+    .secthree{
+        width:100%;
+        text-align: center;
+        h1,h4{
+            font-size: 1.2rem;
+        }
+        .imgsection{
+         width:80%;
+         display: grid;
+         padding:0px;
+         margin:0 auto;
+         grid-template-rows: repeat(1,auto);
+         grid-template-columns: repeat(3,auto);
+         align-content: space-between;
+         justify-content: center;
+       .imageone{
+        width:100%;
+        grid-row: 1/2;
+        grid-column: 1/2; 
+    }
+       .imagetwo{
+        width:100%;
+        grid-row: 2/3;
+        grid-column: 1/2;
+       }
+       .imagethree{
+        width:100%;
+        grid-row: 3/4;
+        grid-column: 1/2;   
+       }
+    }
+    }
+}
+@media only screen and(max-width:470px){
+    .secthree{
+        width:100%;
+        text-align: center;
+        .imgsection{
+         width:80%;
+         display: grid;
+         padding:0px;
+         margin:0 auto;
+         grid-template-rows: repeat(1,auto);
+         grid-template-columns: repeat(3,auto);
+         align-content: space-between;
+         justify-content: center;
+       .imageone{
+        width:100%;
+        grid-row: 1/2;
+        grid-column: 1/2;  
+        .bxone{
+            height:50%;
+        } 
+    }
+       .imagetwo{
+        width:100%;
+        grid-row: 2/3;
+        grid-column: 1/2;
+        .bxtwo{
+            height:50%;
+        } 
+       }
+       .imagethree{
+        width:100%;
+        grid-row: 3/4;
+        grid-column: 1/2; 
+        .bxthree{
+            height:50%;
+        }  
+       }
+    }
+    }
+}
